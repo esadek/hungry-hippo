@@ -1,6 +1,9 @@
 import * as log from "https://deno.land/std@0.206.0/log/mod.ts";
+import ngrok from "npm:ngrok";
 
-Deno.serve(async (req: Request): Promise<Response> => {
+const PORT = 8000
+
+Deno.serve({ port: PORT }, async (req: Request): Promise<Response> => {
   if (req.method !== "POST") {
     log.error("405 Method Not Allowed");
     return new Response("Only POST requests accepted", { status: 405 });
@@ -17,3 +20,8 @@ Deno.serve(async (req: Request): Promise<Response> => {
     return new Response(error, { status: 400 });
   }
 });
+
+(async () => {
+  const listener = await ngrok.connect({ addr: PORT });
+  console.log(`Ingress established at ${listener}`);
+})();
