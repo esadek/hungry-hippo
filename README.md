@@ -17,7 +17,7 @@ brew install deno
 1. Run HTTP server and tunnel:
 
 ```bash
-deno run -A https://cdn.jsdelivr.net/gh/esadek/hungry-hippo/main.ts
+deno run -A https://raw.githubusercontent.com/esadek/hungry-hippo/main/main.ts
 ```
 
 2. Send requests to ngrok URL:
