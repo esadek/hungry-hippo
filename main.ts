@@ -1,12 +1,14 @@
 import * as log from "https://deno.land/std@0.206.0/log/mod.ts";
 import ngrok from "npm:ngrok";
 
-const PORT = 8000
+const PORT = 8000;
 
 Deno.serve({ port: PORT }, async (req: Request): Promise<Response> => {
-  if (req.method !== "POST") {
+  if (!["POST", "PUT", "PATCH"].includes(req.method)) {
     log.error("405 Method Not Allowed");
-    return new Response("Only POST requests accepted", { status: 405 });
+    return new Response("Only POST, PUT and PATCH requests accepted", {
+      status: 405,
+    });
   }
   try {
     const payload = await req.json();
