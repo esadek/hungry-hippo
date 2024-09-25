@@ -37,7 +37,3 @@ curl --json '{"event": "test"}' https://abc-123.ngrok-free.app
 ```bash
 cat data.jsonl
 ```
-
-## License
-
-[MIT](LICENSE)
