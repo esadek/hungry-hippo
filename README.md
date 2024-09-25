@@ -1,8 +1,7 @@
 # Hungry Hippo
 
 [![Build](https://img.shields.io/github/actions/workflow/status/esadek/hungry-hippo/ci.yaml)](https://github.com/esadek/hungry-hippo/actions/workflows/ci.yaml)
-[![Size](https://img.shields.io/github/size/esadek/hungry-hippo/main.ts
-)](https://github.com/esadek/hungry-hippo/blob/main/main.ts)
+[![Size](https://img.shields.io/github/size/esadek/hungry-hippo/main.ts)](https://github.com/esadek/hungry-hippo/blob/main/main.ts)
 [![License](https://img.shields.io/github/license/esadek/hungry-hippo)](https://github.com/esadek/hungry-hippo/blob/main/LICENSE)
 
 Hungry Hippo is a [Deno](https://deno.com/) HTTP server that accepts JSON
