@@ -16,10 +16,18 @@ but can be used to consume webhooks from other providers.
 
 ## Prerequisite
 
-Install Deno. [Homebrew](https://brew.sh/) is recommended for macOS:
+Install Deno on your machine.
+
+Mac and Linux:
 
 ```bash
-brew install deno
+curl -fsSL https://deno.land/install.sh | sh
+```
+
+Windows:
+
+```bash
+irm https://deno.land/install.ps1 | iex
 ```
 
 ## Usage
