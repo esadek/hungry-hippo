@@ -1,6 +1,12 @@
 # Hungry Hippo
 
-Hungry Hippo is a [Deno](https://deno.com/) HTTP server that accepts JSON payloads via POST, PUT and PATCH requests and appends the received JSON to a [JSON Lines](https://jsonlines.org/) file. [ngrok](https://ngrok.com/) is used to expose the server to the internet. Hungry Hippo was created to be used with the [RudderStack webhooks destination](https://www.rudderstack.com/docs/destinations/webhooks/), but can be used to consume webhooks from other providers.
+Hungry Hippo is a [Deno](https://deno.com/) HTTP server that accepts JSON
+payloads via POST, PUT and PATCH requests and appends the received JSON to a
+[JSON Lines](https://jsonlines.org/) file. [ngrok](https://ngrok.com/) is used
+to expose the server to the internet. Hungry Hippo was created to be used with
+the
+[RudderStack webhooks destination](https://www.rudderstack.com/docs/destinations/webhooks/),
+but can be used to consume webhooks from other providers.
 
 ![Diagram](diagram.png)
 
