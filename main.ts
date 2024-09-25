@@ -14,8 +14,8 @@ Deno.serve({ port: PORT }, async (req: Request): Promise<Response> => {
     const payload = await req.json();
     const output = JSON.stringify(payload) + "\n";
     await Deno.writeTextFile("data.jsonl", output, { append: true });
-    log.info(payload);
     log.info("200 OK");
+    log.info(payload);
     return new Response("Payload consumed and stored", { status: 200 });
   } catch (error) {
     log.error("400 Bad Request");
